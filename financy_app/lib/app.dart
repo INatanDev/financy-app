@@ -1,4 +1,3 @@
-import 'package:financy_app/feature/splash/splash_page.dart';
 import 'package:financy_app/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 
