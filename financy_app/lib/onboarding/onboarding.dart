@@ -1,5 +1,8 @@
+import 'dart:developer';
+
 import 'package:financy_app/common/constants/app_colors.dart';
 import 'package:financy_app/common/constants/app_text_styles.dart';
+import 'package:financy_app/common/widgets/multi_text_button.dart';
 import 'package:flutter/material.dart';
 
 import '../common/widgets/primary_button.dart';
@@ -41,16 +44,24 @@ class OnboardingPage extends StatelessWidget {
                 onPressed: () {},
               ),
             ),
-            Text(
-              'Already have account? Log In',
-              style: AppTextStyles.smallText.copyWith(
-                color: AppColors.grey,
-              ),
+            MultiTextButton(
+              onPressed: () => log('tap'),
+              children: [
+                Text(
+                  'Already have account? ',
+                  style: AppTextStyles.smallText.copyWith(
+                    color: AppColors.grey,
+                  ),
+                ),
+                Text(
+                  'Log In ',
+                  style: AppTextStyles.smallText.copyWith(
+                    color: AppColors.greeLighttwo,
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(
-              height: 40.0,
-            ),
-            const SizedBox(height: 24.0)
+            const SizedBox(height: 24.0),
           ],
         ),
       ),
