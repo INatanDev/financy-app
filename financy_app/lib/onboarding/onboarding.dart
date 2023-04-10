@@ -35,9 +35,10 @@ class OnboardingPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 32.0,
-                vertical: 16.0,
+              padding: const EdgeInsets.only(
+                left: 32.0,
+                right: 32.0,
+                top: 16.0,
               ),
               child: PrimaryButton(
                 text: 'Get Started',
